@@ -11,22 +11,17 @@ class Magi extends Character {
         }
         return calcAttack;
     }
-
+  
     get stoned() {
         return this.isStoned;
     }
-
+  
     set stoned(value) {
         this.isStoned = value;
-        this.attack = this.baseAttack;
     }
-
+  
     get attack() {
         return this.magicAttack(this.baseAttack, this.distance, this.stoned);
-    }
-
-    set attack(attack) {
-        this.baseAttack = attack;
     }
 }
 
